@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import * as dayjs from "dayjs";
+import { nanoid } from 'nanoid';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         >
           Učimo React
         </a>
+        <p>Vaš jedinstveni ID je {nanoid()}</p>
       </header>
     </div>
   );
