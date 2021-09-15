@@ -1,8 +1,10 @@
 export function getRandomName() {
-    return "ime";
+    return "nekoime";
 };
 
 export function getRandomColor() {
-    return "boja";
+    return "nekaboja";
 };
 
+const RANDOM = "RANDOM";
+export default RANDOM;

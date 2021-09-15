@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { getCurrentDate, getID } from "./helpers";
-import { getRandomName, getRandomColor } from "./random";
+import constant, { getRandomName, getRandomColor } from "./random";
 
 function App() {
   return (
@@ -11,7 +11,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Danas je {getCurrentDate()}</p>
 
-        <p>Ime: {getRandomName()} i boja: {getRandomColor()}</p>
+        <p>Tvoje ime je: {getRandomName()} , a boja: {getRandomColor()}</p>
+
+        <p>Nasumična vrijednost je: {constant}</p>
 
         <p>Vježbamo uređivati my-app React aplikaciju!</p>
         <a
