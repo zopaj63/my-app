@@ -5,9 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Uvod u React</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Uredi <code>src/App.js</code> i spremi za ponovno učitavanje.
+          Vježbamo uređivati my-app React aplikaciju!
         </p>
         <a
           className="App-link"
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Učimo React
         </a>
       </header>
     </div>
