@@ -16,11 +16,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/zopaj63/my-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Učimo React
+          Klik na GitHub my-app repozitorij
         </a>
         <p>Vaš jedinstveni ID je {nanoid()}</p>
       </header>
