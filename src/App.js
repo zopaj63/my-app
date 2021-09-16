@@ -24,7 +24,7 @@ function App() {
         >
           Klik na GitHub my-app repozitorij
         </a>
-        <p>Vaš jedinstveni ID je {getID()}</p>
+        <p>Tvoj jedinstveni ID je {getID()}</p>
       </header>
     </div>
   );
