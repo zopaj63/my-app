@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import { getCurrentDate, getId } from "./helpers";
-import constant, { getRandomName, getRandomColor } from "./random";
+import { getId } from './helpers';
+import CurrentDate from './components/CurrentDate';
+import UserInfo from './components/UserInfo';
+import UniqueId from './components/UniqueId';
 
 function App() {
   return (
@@ -9,11 +11,12 @@ function App() {
       <header className="App-header">
         <h1>Uvod u React</h1>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Danas je {getCurrentDate()}</p>
 
-        <p>Tvoje ime je: {getRandomName()} , a boja: {getRandomColor()}</p>
+        <CurrentDate />
 
-        <p>Nasumična vrijednost je: {constant}</p>
+        <UserInfo />
+
+        <UniqueId />
 
         <p>Vježbamo uređivati my-app React aplikaciju!</p>
         <a
