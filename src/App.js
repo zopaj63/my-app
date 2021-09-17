@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { getCurrentDate, getID } from "./helpers";
+import { getCurrentDate, getId } from "./helpers";
 import constant, { getRandomName, getRandomColor } from "./random";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         >
           Klik na GitHub my-app repozitorij
         </a>
-        <p>Tvoj jedinstveni ID je {getID()}</p>
+        <p>Tvoj jedinstveni ID je {getId()}</p>
       </header>
     </div>
   );
