@@ -6,9 +6,7 @@ import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
 
 function CoinToss() {
-  const isHeads = Math.random() > 0.5;
-  const message = isHeads ? "heads" : "tails";
-  return <span>The result of the coin toss is {message}.</span>;
+  return <span>The result of the coin toss is {Math.random() > 0.5 ? "heads" : "tails"}.</span>;
 }
 
 function App() {
