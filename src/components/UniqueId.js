@@ -1,5 +1,5 @@
-import { getId as constant } from "../helpers";
+import { getId } from "../helpers";
 
 export default function UniqueId() {
-    return <p>Nasumična vrijednost je: {constant}</p>;
+    return <p>My unique ID is: {getId()}</p>;
 }

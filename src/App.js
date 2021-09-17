@@ -1,33 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
-import { getId } from './helpers';
+import constant from "./random";
 import CurrentDate from './components/CurrentDate';
 import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
+
+function CoinToss() {
+  const isHeads = Math.random() > 0.5;
+  const message = isHeads ? "heads" : "tails";
+  return <span>The result of the coin toss is {message}.</span>;
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Uvod u React</h1>
+        <h1>We learn React!</h1>
         <img src={logo} className="App-logo" alt="logo" />
-
+        <p>
+          Coin toss game! <CoinToss />
+        </p>
         <CurrentDate />
-
         <UserInfo />
-
         <UniqueId />
 
-        <p>Vježbamo uređivati my-app React aplikaciju!</p>
+        <p>The random constant is {constant}</p>
+
+        <p>We practice editing my-app: 3rd part, props</p>
+
         <a
           className="App-link"
           href="https://github.com/zopaj63/my-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Klik na GitHub my-app repozitorij
+          My App 3 - GitHub repository
         </a>
-        <p>Tvoj jedinstveni ID je {getId()}</p>
+
       </header>
     </div>
   );

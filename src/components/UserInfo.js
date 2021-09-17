@@ -1,6 +1,10 @@
-import { getRandomName } from "../random";
-import { getRandomColor } from "../random";
+import { getRandomColor, getRandomName } from "../random";
 
 export default function UserInfo() {
-    return <p>Tvoje ime je: {getRandomName()} , a boja: {getRandomColor()}</p>;
+    const color = getRandomColor();
+    return (
+        <p>My name is {getRandomName()} and my color is {" "}
+            <span style={{ color: color }}>{color}</span>
+        </p>
+    );
 }
