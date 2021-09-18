@@ -4,10 +4,7 @@ import constant from "./random";
 import CurrentDate from './components/CurrentDate';
 import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
-
-function CoinToss() {
-  return <span>The result of the coin toss is {Math.random() > 0.5 ? "heads" : "tails"}.</span>;
-}
+import CoinToss from './components/CoinToss';
 
 function App() {
   return (
