@@ -1,3 +1,8 @@
 export default function CoinToss() {
-    return <span>The result of the coin toss is {Math.random() > 0.5 ? "heads" : "tails"}.</span>;
+    const isHeads = Math.random() > 0.5;
+    return (
+        <span>
+            The result of the coin toss is {isHeads && "heads"} {!isHeads && "tails"}!
+        </span>
+    );
 }

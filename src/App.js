@@ -13,7 +13,7 @@ function App() {
         <h1>We learn React!</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Coin toss game! <CoinToss />
+          Coin toss game: <CoinToss />
         </p>
         <CurrentDate />
         <UserInfo />
