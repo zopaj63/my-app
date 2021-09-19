@@ -19,7 +19,7 @@ function App() {
         <UserInfo />
         <UniqueId />
 
-        <p>The random constant is {constant}</p>
+        <p>The random constant is <span style={{ color: "lightGreen" }}> {constant}</span></p>
 
         <p>We practice editing my-app: 3rd part, props</p>
 
