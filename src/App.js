@@ -6,7 +6,7 @@ import CurrentDate from './components/CurrentDate';
 import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
 import CoinToss from './components/CoinToss';
-import GreetComponent from "./components/GreetComponent";
+//import GreetComponent from "./components/GreetComponent";
 
 //function Greet({ greeting, name, children }) {
 //  console.log(`${greeting} ${name}!`);
