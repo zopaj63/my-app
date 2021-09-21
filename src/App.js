@@ -1,3 +1,4 @@
+//import React from "react";
 import logo from './logo.svg';
 import './App.css';
 import constant from "./random";
@@ -5,6 +6,22 @@ import CurrentDate from './components/CurrentDate';
 import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
 import CoinToss from './components/CoinToss';
+import GreetComponent from "./components/GreetComponent";
+
+//function Greet({ greeting, name, children }) {
+//  console.log(`${greeting} ${name}!`);
+//  return (
+//    <div>
+//      <div>
+//        {greeting} {name}!
+//      </div>
+//      {children}
+//    </div>
+//  );
+//}
+
+
+
 
 function App() {
   return (
@@ -15,6 +32,10 @@ function App() {
         <p>
           Coin toss game: <CoinToss />
         </p>
+
+        <div>Lorem</div>
+        <div>ipsum!</div>
+
         <CurrentDate />
         <UserInfo />
         <UniqueId />
