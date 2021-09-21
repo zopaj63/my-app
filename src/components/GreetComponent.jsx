@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class GreetComponent extends React.Component {
     render() {
@@ -13,3 +14,9 @@ export default class GreetComponent extends React.Component {
         )
     }
 }
+
+GreetComponent.propTypes = {
+    greeting: PropTypes.string,
+    name: PropTypes.string,
+    children: PropTypes.any,
+};

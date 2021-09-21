@@ -7,6 +7,7 @@ import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
 import CoinToss from './components/CoinToss';
 //import GreetComponent from "./components/GreetComponent";
+import LikeButton from './components/LikeButton';
 
 //function Greet({ greeting, name, children }) {
 //  console.log(`${greeting} ${name}!`);
@@ -30,11 +31,14 @@ function App() {
         <h1>We learn React!</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          <LikeButton />
           Coin toss game: <CoinToss />
         </p>
 
         <div>Lorem</div>
         <div>ipsum!</div>
+
+
 
         <CurrentDate />
         <UserInfo />
