@@ -6,21 +6,7 @@ import CurrentDate from './components/CurrentDate';
 import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
 import CoinToss from './components/CoinToss';
-//import GreetComponent from "./components/GreetComponent";
 import LikeButton from './components/LikeButton';
-
-//function Greet({ greeting, name, children }) {
-//  console.log(`${greeting} ${name}!`);
-//  return (
-//    <div>
-//      <div>
-//        {greeting} {name}!
-//      </div>
-//      {children}
-//    </div>
-//  );
-//}
-
 
 
 
@@ -46,7 +32,7 @@ function App() {
 
         <p>The random constant is <span style={{ color: "lightGreen" }}> {constant}</span></p>
 
-        <p>We practice editing my-app: 3rd part, props</p>
+        <p>We practice editing my-app: 4th part, events</p>
 
         <a
           className="App-link"

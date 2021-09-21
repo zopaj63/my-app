@@ -29,6 +29,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c187ce1f-5837-4d64-9a7c-cd350e925b00/deploy-status)](https://app.netlify.com/sites/zopaj63-my-app/deploys)
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
