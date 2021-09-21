@@ -11,5 +11,5 @@ export default function LikeButton() {
 
     };
 
-    return <button onClick={incrementCount}>Likes:{count}</button>
+    return <button onClick={incrementCount}>Likes: {count}</button>
 }

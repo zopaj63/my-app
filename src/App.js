@@ -40,7 +40,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          My App 3 - GitHub repository
+          My App 4 - GitHub repository
         </a>
 
       </header>
