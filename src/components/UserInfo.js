@@ -1,4 +1,4 @@
-import { getRandomColor, getRandomName } from "../random";
+import { getRandomColor } from "../random";
 import GreetComponent from "./GreetComponent";
 
 export default function UserInfo() {
