@@ -1,3 +1,3 @@
 export default function getRandomColor() {
-    return "lightGreen";
+    return "yellow";
 };

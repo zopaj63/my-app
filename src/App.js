@@ -1,4 +1,3 @@
-//import React from "react";
 import logo from './logo.svg';
 import './App.css';
 import constant from "./random";
@@ -7,7 +6,6 @@ import UserInfo from './components/UserInfo';
 import UniqueId from './components/UniqueId';
 import CoinToss from './components/CoinToss';
 import LikeButton from './components/LikeButton';
-
 
 
 function App() {
@@ -23,8 +21,6 @@ function App() {
 
         <div>Lorem</div>
         <div>ipsum!</div>
-
-
 
         <CurrentDate />
         <UserInfo />

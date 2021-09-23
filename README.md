@@ -14,6 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c187ce1f-5837-4d64-9a7c-cd350e925b00/deploy-status)](https://app.netlify.com/sites/zopaj63-my-app/deploys)
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -28,8 +30,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c187ce1f-5837-4d64-9a7c-cd350e925b00/deploy-status)](https://app.netlify.com/sites/zopaj63-my-app/deploys)
 
 ### `npm run eject`
 
