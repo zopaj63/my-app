@@ -46,3 +46,8 @@ button{
   border-radius: 8px;
   font-size: large;
 }
+
+.coin{
+  width: 80px;
+  border-radius: 50%;
+}
