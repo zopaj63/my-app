@@ -3,9 +3,12 @@ import './App.css';
 import CoinToss from './components/CoinToss';
 import LikeButton from './components/LikeButton';
 import MessageForm from './components/MessageForm';
+import { useState } from "react";
 
 
 function App() {
+  const [messageObject, setMessageObject] = useState(null);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,10 +19,11 @@ function App() {
           Coin toss game: <CoinToss />
         </p>
 
+        {messageObject !== null && <div>{messageObject.message}</div>}
+        <MessageForm onSendMessage={setMessageObject} />
+
+
         <p>We practice editing my-app: 4th part, events</p>
-
-        <MessageForm />
-
         <a
           className="App-link"
           href="https://github.com/zopaj63/my-app"
