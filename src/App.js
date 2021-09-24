@@ -1,11 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import constant from "./random";
-import CurrentDate from './components/CurrentDate';
-import UserInfo from './components/UserInfo';
-import UniqueId from './components/UniqueId';
 import CoinToss from './components/CoinToss';
 import LikeButton from './components/LikeButton';
+import MessageForm from './components/MessageForm';
 
 
 function App() {
@@ -19,16 +16,9 @@ function App() {
           Coin toss game: <CoinToss />
         </p>
 
-        <div>Lorem</div>
-        <div>ipsum!</div>
-
-        <CurrentDate />
-        <UserInfo />
-        <UniqueId />
-
-        <p>The random constant is <span style={{ color: "lightGreen" }}> {constant}</span></p>
-
         <p>We practice editing my-app: 4th part, events</p>
+
+        <MessageForm />
 
         <a
           className="App-link"

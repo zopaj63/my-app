@@ -1,4 +1,3 @@
-
 export default function CoinTossComponent({ isHeads, tossCoin }) {
 
     return (
