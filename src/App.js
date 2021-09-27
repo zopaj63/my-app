@@ -1,7 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import CoinToss from './components/CoinToss';
-import LikeButton from './components/LikeButton';
 import MessageForm from './components/MessageForm';
 import { useState } from "react";
 
@@ -13,17 +10,21 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>We learn React!</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <LikeButton />
-        <p>
-          Coin toss game: <CoinToss />
-        </p>
 
-        {messageObject !== null && <div>{messageObject.message}</div>}
+        {messageObject !== null && (
+          <div
+            className={
+              messageObject.isImportant ? "important-message" : "message"
+            }
+          >
+            {messageObject.message}
+          </div>
+        )}
+
         <MessageForm onSendMessage={setMessageObject} />
 
 
-        <p>We practice editing my-app: 4th part, events</p>
+        <p>We practice editing my-app: 5th part, events</p>
         <a
           className="App-link"
           href="https://github.com/zopaj63/my-app"
