@@ -29,16 +29,27 @@ export default function MessageForm({ onSendMessage }) {
 
     return (
         <form onSubmit={sendMessage}>
-            <input type="text" onChange={setMessage} value={state.message} />
-            <br />
-            <input type="text" onChange={setTitle} value={state.title} />
-            <br />
+            <input
+                type="text"
+                onChange={setTitle}
+                value={state.title}
+                placeholder="Title"
+            />
+
+            <input
+                type="text"
+                onChange={setMessage}
+                value={state.message}
+                placeholder="Message"
+            />
+
             <label>
                 <input
                     type="checkbox"
                     onChange={setIsImportant}
                     checked={state.isImportant}
                     value="isImportant"
+                    checked={state.isImportant}
                 /> Important
             </label>
 

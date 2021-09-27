@@ -16,6 +16,7 @@ function App() {
           <Message
             isImportant={messageObject.isImportant}
             message={messageObject.message}
+            title={messageObject.title}
           />
         )}
 

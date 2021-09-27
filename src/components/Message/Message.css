@@ -1,0 +1,11 @@
+.message {
+    box-sizing: border-box;
+    border: 4px double lightgreen;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.message.message--important {
+    border-color: red;
+}
