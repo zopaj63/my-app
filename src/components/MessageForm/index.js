@@ -49,7 +49,7 @@ export default function MessageForm({ onSendMessage }) {
                     onChange={setIsImportant}
                     checked={state.isImportant}
                     value="isImportant"
-                    checked={state.isImportant}
+                //    checked={state.isImportant}
                 /> Important
             </label>
 

@@ -22,14 +22,13 @@ function App() {
 
         <MessageForm onSendMessage={setMessageObject} />
 
-        <p>We practice editing my-app: 5th part, events</p>
         <a
           className="App-link"
           href="https://github.com/zopaj63/my-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          My App 4 - GitHub repository
+          My App 5 - GitHub repository
         </a>
 
       </header>
