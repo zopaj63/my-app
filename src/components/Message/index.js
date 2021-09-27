@@ -1,22 +1,11 @@
-import MessageForm from "../MessageForm";
-import { useState } from "react";
 
-export default function Message() {
-    const [messageObject, setMessageObject] = useState(null);
-    return (
-        {
-            messageObject !== null && (
-            <div
-                className={
-                    messageObject.isImportant ? "important-message" : "message"
-                }
-            >
-                {messageObject.message}
-            </div>
-        )
-    });
+export default function Message({ isImportant, message }) {
+    if (message === "" || message == null) {
+        return null;
+    }
 
+    const className = isImportant ? "important-message" : "message";
 
-<MessageForm onSendMessage={setMessageObject} />
+    return <div className={className}>{message}</div>;
 
 }

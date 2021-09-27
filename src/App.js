@@ -1,18 +1,25 @@
 import './App.css';
+import MessageForm from "./components/MessageForm";
 import Message from './components/Message';
-// import { useState } from "react";
+import { useState } from "react";
 
 
 function App() {
-  //  const [messageObject, setMessageObject] = useState(null);
+  const [messageObject, setMessageObject] = useState(null);
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>We learn React!</h1>
+        <h1>My Chat App</h1>
 
-        <Message />
+        {messageObject !== null && (
+          <Message
+            isImportant={messageObject.isImportant}
+            message={messageObject.message}
+          />
+        )}
 
+        <MessageForm onSendMessage={setMessageObject} />
 
         <p>We practice editing my-app: 5th part, events</p>
         <a
