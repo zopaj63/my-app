@@ -14,8 +14,8 @@ function App() {
       <header className="App-header">
         <h1>We learn React!</h1>
         <img src={logo} className="App-logo" alt="logo" />
+        <LikeButton />
         <p>
-          <LikeButton />
           Coin toss game: <CoinToss />
         </p>
 
