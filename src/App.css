@@ -40,11 +40,10 @@
 button{
   background-color: aquamarine;
   padding: 8px;
-  margin: 12px;
+  margin-right: 12px;
   color: darkgreen;
   font-weight: bold;
   border-radius: 8px;
-  font-size: large;
 }
 
 .coin{

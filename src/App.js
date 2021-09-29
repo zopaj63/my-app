@@ -4,8 +4,8 @@ import Message from './components/Message';
 import { useState } from "react";
 import { getId } from './helpers';
 
-const numbers = [1, 2, 3, 4];
-const numberElements = numbers.map(number => ({ key: getId(), value: number })
+const menus = ["prvi", "drugi", "treći", "četvrti"];
+const menuElements = menus.map(menu => ({ key: getId(), value: menu })
 );
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
   return (
     <div className="App">
 
-      {numberElements.map((numberElement) =>
-        <button key={numberElement.key}>
-          {numberElement.value}
+      {menuElements.map((menuElement) =>
+        <button key={menuElement.key}>
+          {menuElement.value}
         </button>
       )}
 
