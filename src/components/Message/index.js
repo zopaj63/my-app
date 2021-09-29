@@ -12,7 +12,7 @@ export default function Message({ isImportant, message, title }) {
     let className = "message";
     if (isImportant) className += " message--important";
 
-    return <div className={className}>
+    return (<div className={className}>
         <div>
             {title}
         </div>
@@ -31,6 +31,7 @@ export default function Message({ isImportant, message, title }) {
             <CurrentDate />
         </div>
 
-    </div>;
+    </div>
+    );
 
 }

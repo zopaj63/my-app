@@ -1,20 +1,23 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+import "./MessageForm.css";
 
 export default function MessageForm({ onSendMessage }) {
-    const [state, setState] = useState({ message: "", title: "", isImportant: false });
+    const [state, setState] = useState({
+        message: "",
+        isImportant: false,
+        title: "",
+    });
 
-    const setTitle = (event) => {
-        // drugi (funkcijski) pristup:
+    const setMessage = (event) => {
         setState((currentState) => {
-            return { ...currentState, title: event.target.value };
+            return { ...currentState, message: event.target.value };
         });
     };
 
-    const setMessage = (event) => {
-        // setState({ ...state, message: event.target.value });
-        // prvi pristup, drugi (funkcijski) pristup:
+    const setTitle = (event) => {
         setState((currentState) => {
-            return { ...currentState, message: event.target.value };
+            return { ...currentState, title: event.target.value };
         });
     };
 
@@ -28,32 +31,41 @@ export default function MessageForm({ onSendMessage }) {
     };
 
     return (
-        <form onSubmit={sendMessage}>
-            <input
-                type="text"
-                onChange={setTitle}
-                value={state.title}
-                placeholder="Title"
-            />
-
-            <input
-                type="text"
-                onChange={setMessage}
-                value={state.message}
-                placeholder="Message"
-            />
-
-            <label>
+        <form className="MessageForm" onSubmit={sendMessage}>
+            <div className="MessageForm__row">
                 <input
-                    type="checkbox"
-                    onChange={setIsImportant}
-                    checked={state.isImportant}
-                    value="isImportant"
-                //    checked={state.isImportant}
-                /> Important
-            </label>
-
-            <button type="submit">Send</button>
+                    type="text"
+                    onChange={setTitle}
+                    value={state.title}
+                    placeholder="Title"
+                />
+            </div>
+            <div className="MessageForm__row">
+                <input
+                    type="text"
+                    onChange={setMessage}
+                    value={state.message}
+                    placeholder="Message"
+                />
+            </div>
+            <div className="MessageForm__row">
+                <label>
+                    <input
+                        type="checkbox"
+                        onChange={setIsImportant}
+                        value="isImportant"
+                        checked={state.isImportant}
+                    />
+                    Important
+                </label>
+            </div>
+            <div className="MessageForm__row">
+                <button type="submit">Send</button>
+            </div>
         </form>
     );
 }
+
+MessageForm.propTypes = {
+    onSendMessage: PropTypes.func,
+};
