@@ -18,11 +18,13 @@ function App() {
   return (
     <div className="App">
 
-      {menuElements.map((menuElement) =>
-        <button key={menuElement.key}>
-          {menuElement.value}
-        </button>
-      )}
+      <div className="menu">
+        {menuElements.map((menuElement) =>
+          <button key={menuElement.key}>
+            {menuElement.value}
+          </button>
+        )}
+      </div>
 
       <header className="App-header">
 

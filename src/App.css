@@ -38,10 +38,10 @@
 }
 
 button{
-  background-color: aquamarine;
+  background-color: darkgreen;
   padding: 8px;
   margin-right: 12px;
-  color: darkgreen;
+  color: aquamarine;
   font-weight: bold;
   border-radius: 8px;
 }

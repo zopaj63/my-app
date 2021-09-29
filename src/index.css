@@ -22,3 +22,7 @@ input, textarea, button, select {
 	font-size: inherit;
 	line-height: inherit;
 }
+
+.menu {
+	text-align: left;
+}

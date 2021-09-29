@@ -14,7 +14,7 @@ export default function Message({ isImportant, message, title }) {
 
     return (<div className={className}>
         <div>
-            {title}
+            {"Title: "}{title}
         </div>
 
         <div>
@@ -25,7 +25,7 @@ export default function Message({ isImportant, message, title }) {
             <UniqueId />
         </div>
 
-        <div>{message}</div>
+        <div>{"Message: "}{message}</div>
 
         <div>
             <CurrentDate />

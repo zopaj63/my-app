@@ -1,9 +1,10 @@
 .message {
     box-sizing: border-box;
-    border: 4px double lightgreen;
-    padding: 10px;
+    border: 2px solid lightgreen;
+    padding: 20px;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .message.message--important {
