@@ -9,7 +9,11 @@ const numberElements = numbers.map(number => ({ key: getId(), value: number })
 );
 
 function App() {
-  const [messageObject, setMessageObject] = useState(null);
+  const [messageObjects, setMessageObjects] = useState([]);
+
+  const handleSendMessage = (messageObject) => {
+    setMessageObjects([...messageObjects, messageObject]);
+  }
 
   return (
     <div className="App">
@@ -24,15 +28,18 @@ function App() {
 
         <h1>My Chat App</h1>
 
-        {messageObject !== null && (
+        {messageObjects.length === 0 && <p>No messages</p>}
+        {messageObjects.map((messageObject, index) =>
           <Message
+            key={index}
             isImportant={messageObject.isImportant}
             message={messageObject.message}
             title={messageObject.title}
           />
         )}
 
-        <MessageForm onSendMessage={setMessageObject} />
+
+        <MessageForm onSendMessage={handleSendMessage} />
 
         <a
           className="App-link"
