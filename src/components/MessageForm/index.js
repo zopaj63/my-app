@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import "./MessageForm.css";
+import TextInput from "../TextInput";
 
 export default function MessageForm({ onSendMessage }) {
     const [state, setState] = useState({
@@ -33,13 +34,16 @@ export default function MessageForm({ onSendMessage }) {
     return (
         <form className="MessageForm" onSubmit={sendMessage}>
             <div className="MessageForm__row">
-                <input
-                    type="text"
+                <TextInput
+                    label={<div>Title:</div>}
                     onChange={setTitle}
                     value={state.title}
-                    placeholder="Title"
+                    inputProps={{
+                        name: "title", id: "title", placeholder: "Title"
+                    }}
                 />
             </div>
+
             <div className="MessageForm__row">
                 <input
                     type="text"
