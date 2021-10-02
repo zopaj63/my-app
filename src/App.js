@@ -40,8 +40,9 @@ function App() {
           />
         )}
 
-
-        <MessageForm onSendMessage={handleSendMessage} />
+        <div className="App__message-form">
+          <MessageForm onSendMessage={handleSendMessage} />
+        </div>
 
         <a
           className="App-link"

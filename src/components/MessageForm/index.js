@@ -1,7 +1,9 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import "./MessageForm.css";
 import TextInput from "../TextInput";
+import Checkbox from "../Checkbox";
+import FormButton from "../FormButton";
+import "./MessageForm.css";
 
 export default function MessageForm({ onSendMessage }) {
     const [state, setState] = useState({
@@ -52,19 +54,18 @@ export default function MessageForm({ onSendMessage }) {
                     placeholder="Message"
                 />
             </div>
+
             <div className="MessageForm__row">
-                <label>
-                    <input
-                        type="checkbox"
-                        onChange={setIsImportant}
-                        value="isImportant"
-                        checked={state.isImportant}
-                    />
-                    Important
-                </label>
+                <Checkbox
+                    label="Important"
+                    onChange={setIsImportant}
+                    value="isImportant"
+                    checked={state.isImportant}
+                />
             </div>
+
             <div className="MessageForm__row">
-                <button type="submit">Send</button>
+                <FormButton type="submit">Send</FormButton>
             </div>
         </form>
     );
