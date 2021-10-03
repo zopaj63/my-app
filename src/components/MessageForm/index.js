@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import TextInput from "../TextInput";
 import Checkbox from "../Checkbox";
 import FormButton from "../FormButton";
+import PasswordInput from "../PasswordInput";
 import "./MessageForm.css";
 
 export default function MessageForm({ onSendMessage }) {
@@ -58,7 +59,7 @@ export default function MessageForm({ onSendMessage }) {
             </div>
 
             <div className="MessageForm__row">
-                <TextInput
+                <PasswordInput
                     label={<div>Password:</div>}
                     onChange={handleOnChange}
                     value={state.password}
