@@ -10,23 +10,22 @@ export default function MessageForm({ onSendMessage }) {
         message: "",
         isImportant: false,
         title: "",
+        password: "",
     });
 
-    const setMessage = (event) => {
-        setState((currentState) => {
-            return { ...currentState, message: event.target.value };
-        });
-    };
+    const handleOnChange = (event) => {
+        let value = undefined;
 
-    const setTitle = (event) => {
-        setState((currentState) => {
-            return { ...currentState, title: event.target.value };
-        });
-    };
+        if (event.target.type === "checkbox") {
+            value = event.target.checked;
+        } else {
+            value = event.target.value;
+        }
 
-    const setIsImportant = (event) => {
-        setState({ ...state, isImportant: event.target.checked });
-    };
+        setState((currentState) => {
+            return { ...currentState, [event.target.name]: value };
+        })
+    }
 
     const sendMessage = (event) => {
         event.preventDefault();
@@ -38,7 +37,7 @@ export default function MessageForm({ onSendMessage }) {
             <div className="MessageForm__row">
                 <TextInput
                     label={<div>Title:</div>}
-                    onChange={setTitle}
+                    onChange={handleOnChange}
                     value={state.title}
                     inputProps={{
                         name: "title", id: "title", placeholder: "Title"
@@ -47,20 +46,36 @@ export default function MessageForm({ onSendMessage }) {
             </div>
 
             <div className="MessageForm__row">
-                <input
-                    type="text"
-                    onChange={setMessage}
+                <TextInput
+                    label={<div>Message:</div>}
+                    onChange={handleOnChange}
                     value={state.message}
-                    placeholder="Message"
+                    inputProps={{
+                        name: "message", id: "message", placeholder: "Message"
+                    }}
+                />
+            </div>
+
+            <div className="MessageForm__row">
+                <TextInput
+                    label={<div>Password:</div>}
+                    onChange={handleOnChange}
+                    value={state.password}
+                    inputProps={{
+                        name: "password", id: "password", placeholder: "Password"
+                    }}
                 />
             </div>
 
             <div className="MessageForm__row">
                 <Checkbox
                     label="Important"
-                    onChange={setIsImportant}
+                    onChange={handleOnChange}
                     value="isImportant"
                     checked={state.isImportant}
+                    inputProps={{
+                        name: "isImportant", id: "is-important"
+                    }}
                 />
             </div>
 
