@@ -11,6 +11,7 @@ export default function MessageForm({ onSendMessage }) {
         isImportant: false,
         title: "",
         password: "",
+        showPassword: false,
     });
 
     const handleOnChange = (event) => {
@@ -63,6 +64,18 @@ export default function MessageForm({ onSendMessage }) {
                     value={state.password}
                     inputProps={{
                         name: "password", id: "password", placeholder: "Password"
+                    }}
+                />
+            </div>
+
+            <div className="MessageForm__row">
+                <Checkbox
+                    label="Show password?"
+                    onChange={handleOnChange}
+                    value="showPassword"
+                    checked={state.showPassword}
+                    inputProps={{
+                        name: "showPassword", id: "swow-password"
                     }}
                 />
             </div>
