@@ -2,7 +2,10 @@ export default function PasswordInput({
     label, onChange, value, inputProps, isShowPassword
 }) {
 
-    const type = isShowPassword ? "text" : "password";
+    //const type = isShowPassword ? "text" : "password";
+
+    let type = "password";
+    if (isShowPassword) type = "text";
 
     return (
         <div className="PasswordInput">
@@ -10,7 +13,7 @@ export default function PasswordInput({
                 {label}
                 <input
                     {...inputProps}
-                    type="password"
+                    type={type}
                     onChange={onChange}
                     value={value} />
             </label>
