@@ -1,8 +1,8 @@
-export default function TextInput({
+export default function PasswordInput({
     label, onChange, value, inputProps
 }) {
     return (
-        <div className="TextInput">
+        <div className="PasswordInput">
             <label>
                 {label}
                 <input
