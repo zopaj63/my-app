@@ -1,14 +1,18 @@
 import './App.css';
 import MessageForm from "./components/MessageForm";
 import Message from './components/Message';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { getId } from './helpers';
+import AppContext from './contexts/AppContext';
 
 const menus = ["prvi", "drugi", "treći", "četvrti"];
 const menuElements = menus.map(menu => ({ key: getId(), value: menu })
 );
 
 function App() {
+  const appContext = useContext(AppContext);
+  console.log(appContext);
+
   const [messageObjects, setMessageObjects] = useState([]);
 
   const handleSendMessage = (messageObject) => {
@@ -28,7 +32,7 @@ function App() {
 
       <header className="App-header">
 
-        <h1>My Chat App</h1>
+        <h1>My Chat App {appContext.language}</h1>
 
         {messageObjects.length === 0 && <p>No messages</p>}
         {messageObjects.map((messageObject, index) =>
