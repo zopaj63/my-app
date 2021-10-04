@@ -73,7 +73,7 @@ export default function MessageForm({ onSendMessage }) {
                 <Checkbox
                     label="Show password?"
                     onChange={handleOnChange}
-                    value="showPassword"
+                    value="isShowPassword"
                     checked={state.isShowPassword}
                     inputProps={{
                         name: "isShowPassword", id: "is-show-password"

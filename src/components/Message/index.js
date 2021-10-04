@@ -12,6 +12,7 @@ export default function Message({ isImportant, message, title }) {
     let className = "message";
     if (isImportant) className += " message--important";
 
+
     return (<div className={className}>
         <div>
             {"Title: "}{title}
